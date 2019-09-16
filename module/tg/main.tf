@@ -30,7 +30,7 @@ resource "aws_lb_target_group" "target" {
   }
 }
 
-resource "aws_lb_target_group_attachment" "test" {
+resource "aws_lb_target_group_attachment" "lb" {
   target_group_arn = "${aws_lb_target_group.target.arn}"
   target_id        = "${aws_instance.test.id}"
   port             = "${var.tg_instance_port}"

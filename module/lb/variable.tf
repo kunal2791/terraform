@@ -67,3 +67,6 @@ variable "entity" {
 variable "certificate_arn" {
   default = ""
 }
+variable "aws_lb_target_group" {
+  default = ""
+}

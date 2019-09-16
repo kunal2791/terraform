@@ -58,6 +58,9 @@ variable "target_health_protocol" {
   description = "String(optional): The protocol to use for the health check. If not set, it will use the same protocal as target_protocol"
   default     = ""
 }
+variable "tg_instance_port" {
+  default = "5672"
+}
 variable "Env" {
   description = "project environment"
 }
@@ -72,7 +75,4 @@ variable "Purpose" {
 
 variable "Owner" {
   description = "owner of the project"
-}
-variable "tg_instance_port" {
-  default = "5672"
 }
